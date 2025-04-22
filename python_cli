@@ -1,0 +1,22 @@
+---
+
+### 2. `setup_termux.sh`
+```bash
+#!/usr/bin/env bash
+set -e
+
+# Actualizare pachete Termux
+pkg update -y && pkg upgrade -y
+
+# Instalare dependențe de sistem
+pkg install -y python git openssl-tool libffi make clang
+
+# Upgrade pip și instalare dependențe Python
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# Creare folder chei
+mkdir -p .keys
+
+# Permisiuni
+chmod +x main.py
