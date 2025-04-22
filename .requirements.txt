@@ -1,0 +1,7 @@
+websockets>=10.0
+protobuf>=3.20.0
+cryptography>=38.0.0
+pyqrcode>=1.2.1
+pillow>=9.0.0
+termcolor>=2.0.0
+libsignal-protocol-python>=0.1.0
